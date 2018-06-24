@@ -37,17 +37,6 @@
     primary="OBJID">
     <index columns="RA,DEC"/>
 
-<!--
-  OBJID;
-  RA;
-  DEC;
-  NAME;
-  NH;
-  ENERGY_SLOPE;
-  ENERGY_SLOPE_ERROR;
-  EXPOSURE_TIME;
-  SNR
--->
     <column>
       <name>OBJID</name>
       <ucd>meta.id;meta.main</ucd>
@@ -101,174 +90,174 @@
       <description>Total exposure time (non-contiguous)</description>
     </column>
     <column>
-      <!-- <name>NUFNU_3000EV</name> -->
-      <name>nufnu_3keV</name>
+      <name>NUFNU_3000EV</name>
+      <!-- <name>nufnu_3keV</name> -->
       <unit>erg.s-1.cm-2</unit>
       <ucd>phot.flux;em.X-ray</ucd>
       <description>Full band nuFnu-flux at 3000eV</description>
       <type>double precision</type>
     </column>
     <column>
-      <!-- <name>NUFNU_ERROR_3000EV</name> -->
-      <name>nufnu_error_3keV</name>
+      <name>NUFNU_ERROR_3000EV</name>
+      <!-- <name>nufnu_error_3keV</name> -->
       <unit>erg.s-1.cm-2</unit>
       <ucd>stat.error;phot.flux;em.X-ray</ucd>
       <description>Full band nuFnu-flux at 3000eV</description>
       <type>double precision</type>
     </column>
     <column>
-      <!-- <name>NUFNU_500EV</name> -->
-      <name>nufnu_0.5keV</name>
+      <name>NUFNU_500EV</name>
+      <!-- <name>nufnu_0.5keV</name> -->
       <unit>erg.s-1.cm-2</unit>
       <values nullLiteral="-999"/>
       <ucd>phot.flux;em.X-ray.soft</ucd>
       <description>soft nuFnu-flux at 500ev</description>
     </column>
     <column>
-      <!-- <name>NUFNU_ERROR_500EV</name> -->
-      <name>nufnu_error_0.5keV</name>
+      <name>NUFNU_ERROR_500EV</name>
+      <!-- <name>nufnu_error_0.5keV</name> -->
       <unit>erg.s-1.cm-2</unit>
       <values nullLiteral="-999"/>
       <ucd>stat.error;phot.flux;em.X-ray.soft</ucd>
       <description>soft nuFnu-flux at 500ev</description>
     </column>
     <column>
-      <!-- <name>UPPER_LIMIT_500EV</name> -->
-      <name>upper_limit_0.5keV</name>
+      <name>UPPER_LIMIT_500EV</name>
+      <!-- <name>upper_limit_0.5keV</name> -->
       <unit>erg.s-1.cm-2</unit>
       <values nullLiteral="-999"/>
       <ucd>phot.flux;em.X-ray.soft;stat.max</ucd>
       <description>medium nuFnu-flux at 500ev</description>
     </column>
     <column>
-      <!-- <name>NUFNU_1500EV</name> -->
-      <name>nufnu_1.5keV</name>
+      <name>NUFNU_1500EV</name>
+      <!-- <name>nufnu_1.5keV</name> -->
       <unit>erg.s-1.cm-2</unit>
       <values nullLiteral="-999"/>
       <ucd>phot.flux;em.X-ray.medium</ucd>
       <description>medium nuFnu-flux at 1500ev</description>
     </column>
     <column>
-      <!-- <name>NUFNU_ERROR_1500EV</name> -->
-      <name>nufnu_error_1.5keV</name>
+      <name>NUFNU_ERROR_1500EV</name>
+      <!-- <name>nufnu_error_1.5keV</name> -->
       <unit>erg.s-1.cm-2</unit>
       <values nullLiteral="-999"/>
       <ucd>stat.error;phot.flux;em.X-ray.medium</ucd>
       <description>medium nuFnu-flux at 1500ev</description>
     </column>
     <column>
-      <!-- <name>UPPER_LIMIT_1500EV</name> -->
-      <name>upper_limit_1.5keV</name>
+      <name>UPPER_LIMIT_1500EV</name>
+      <!-- <name>upper_limit_1.5keV</name> -->
       <unit>erg.s-1.cm-2</unit>
       <values nullLiteral="-999"/>
       <ucd>phot.flux;em.X-ray.medium;stat.max</ucd>
       <description>medium nuFnu-flux at 1500ev</description>
     </column>
     <column>
-      <!-- <name>NUFNU_4500EV</name> -->
-      <name>nufnu_4.5keV</name>
+      <name>NUFNU_4500EV</name>
+      <!-- <name>nufnu_4.5keV</name> -->
       <unit>erg.s-1.cm-2</unit>
       <values nullLiteral="-999"/>
       <ucd>phot.flux;em.X-ray.hard</ucd>
       <description>hard nuFnu-flux at 4.5keV</description>
     </column>
     <column>
-      <!-- <name>NUFNU_ERROR_4500EV</name> -->
-      <name>nufnu_error_4.5keV</name>
+      <name>NUFNU_ERROR_4500EV</name>
+      <!-- <name>nufnu_error_4.5keV</name> -->
       <unit>erg.s-1.cm-2</unit>
       <values nullLiteral="-999"/>
       <ucd>stat.error;phot.flux;em.X-ray.hard</ucd>
       <description>hard nuFnu-flux at 4.5keV</description>
     </column>
     <column>
-      <!-- <name>UPPER_LIMIT_4500EV</name> -->
-      <name>upper_limit_4.5keV</name>
+      <name>UPPER_LIMIT_4500EV</name>
+      <!-- <name>upper_limit_4.5keV</name> -->
       <unit>erg.s-1.cm-2</unit>
       <values nullLiteral="-999"/>
       <ucd>phot.flux;em.X-ray.hard;stat.max</ucd>
       <description>hard nuFnu-flux at 4.5keV</description>
     </column>
     <column>
-      <!-- <name>COUNTRATES_300_10000EV</name> -->
-      <name>countrates_0.3_10keV</name>
+      <name>COUNTRATES_300_10000EV</name>
+      <!-- <name>countrates_0.3_10keV</name> -->
       <unit>ph.s-1</unit>
       <ucd>phot.flux</ucd>
       <description>photon flux integrated in 0.3-10keV</description>
     </column>
     <column>
-      <!-- <name>COUNTRATES_ERROR_300_10000EV</name> -->
-      <name>countrates_error_0.3_10keV</name>
+      <name>COUNTRATES_ERROR_300_10000EV</name>
+      <!-- <name>countrates_error_0.3_10keV</name> -->
       <unit>ph.s-1</unit>
       <ucd>phot.flux;stat.error</ucd>
       <description>error photon flux integrated in 0.3-10keV</description>
     </column>
     <column>
-      <!-- <name>COUNTRATES_300_1000EV</name> -->
-      <name>countrates_0.3_1keV</name>
+      <name>COUNTRATES_300_1000EV</name>
+      <!-- <name>countrates_0.3_1keV</name> -->
       <unit>ph.s-1</unit>
       <values nullLiteral="-999"/>
       <ucd>phot.flux</ucd>
       <description>photon flux integrated in 0.3-1keV</description>
     </column>
     <column>
-      <!-- <name>COUNTRATES_ERROR_300_1000EV</name> -->
-      <name>countrates_error_0.3_1keV</name>
+      <name>COUNTRATES_ERROR_300_1000EV</name>
+      <!-- <name>countrates_error_0.3_1keV</name> -->
       <unit>ph.s-1</unit>
       <values nullLiteral="-999"/>
       <ucd>phot.flux;stat.error</ucd>
       <description>error photon flux integrated in 0.3-1keV</description>
     </column>
     <column>
-      <!-- <name>UPPER_LIMIT_300_1000EV</name> -->
-      <name>upper_limit_0.3_1keV</name>
+      <name>UPPER_LIMIT_300_1000EV</name>
+      <!-- <name>upper_limit_0.3_1keV</name> -->
       <unit>ph.s-1</unit>
       <values nullLiteral="-999"/>
       <ucd>phot.flux;stat.max</ucd>
       <description>upper-limit photon flux integrated in 0.3-1keV</description>
     </column>
     <column>
-      <!-- <name>COUNTRATES_1000_2000EV</name> -->
-      <name>countrates_1_2keV</name>
+      <name>COUNTRATES_1000_2000EV</name>
+      <!-- <name>countrates_1_2keV</name> -->
       <unit>ph.s-1</unit>
       <values nullLiteral="-999"/>
       <ucd>phot.flux</ucd>
       <description>photon flux integrated in 1-2keV</description>
     </column>
     <column>
-      <!-- <name>COUNTRATES_ERROR_1000_2000EV</name> -->
-      <name>countrates_error_1_2keV</name>
+      <name>COUNTRATES_ERROR_1000_2000EV</name>
+      <!-- <name>countrates_error_1_2keV</name> -->
       <unit>ph.s-1</unit>
       <values nullLiteral="-999"/>
       <ucd>phot.flux;stat.error</ucd>
       <description>error photon flux integrated in 1-2keV</description>
     </column>
     <column>
-      <!-- <name>UPPER_LIMIT_1000_2000EV</name> -->
-      <name>upper_limit_1_2keV</name>
+      <name>UPPER_LIMIT_1000_2000EV</name>
+      <!-- <name>upper_limit_1_2keV</name> -->
       <unit>ph.s-1</unit>
       <values nullLiteral="-999"/>
       <ucd>phot.flux;stat.max</ucd>
       <description>upper-limit photon flux integrated in 1-2keV</description>
     </column>
     <column>
-      <!-- <name>COUNTRATES_2000_10000EV</name> -->
-      <name>countrates_2_10keV</name>
+      <name>COUNTRATES_2000_10000EV</name>
+      <!-- <name>countrates_2_10keV</name> -->
       <unit>ph.s-1</unit>
       <values nullLiteral="-999"/>
       <ucd>phot.flux</ucd>
       <description>photon flux integrated in 2-10keV</description>
     </column>
     <column>
-      <!-- <name>COUNTRATES_ERROR_2000_10000EV</name> -->
-      <name>countrates_error_2_10keV</name>
+      <name>COUNTRATES_ERROR_2000_10000EV</name>
+      <!-- <name>countrates_error_2_10keV</name> -->
       <unit>ph.s-1</unit>
       <values nullLiteral="-999"/>
       <ucd>phot.flux;stat.error</ucd>
       <description>error photon flux integrated in 2-10keV</description>
     </column>
     <column>
-      <!-- <name>UPPER_LIMIT_2000_10000EV</name> -->
-      <name>upper_limit_2_10keV</name>
+      <name>UPPER_LIMIT_2000_10000EV</name>
+      <!-- <name>upper_limit_2_10keV</name> -->
       <unit>ph.s-1</unit>
       <values nullLiteral="-999"/>
       <ucd>phot.flux;stat.max</ucd>
